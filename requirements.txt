@@ -1,0 +1,39 @@
+# ============================================================
+# 环境要求：conda activate torch_env
+# 安装命令：pip install -r requirements.txt
+# ============================================================
+
+# Core
+torch>=2.0.0
+transformers>=4.30.0
+pandas>=1.5.0
+numpy>=1.24.0
+scikit-learn>=1.2.0
+
+# Data processing
+chardet>=5.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Hugging Face ecosystem
+datasets>=2.14.0
+accelerate>=0.20.0
+peft>=0.4.0
+
+# LLM (可选，用于 Zero-shot 和 SFT)
+# bitsandbytes>=0.41.0  # Windows 可忽略（仅 QLoRA 需要）
+
+# Utilities
+tqdm>=4.65.0
+
+# ============================================================
+# 分模块安装建议：
+#
+# 【仅 BERT 部分】:
+#   pip install torch transformers pandas scikit-learn matplotlib seaborn tqdm chardet
+#
+# 【BERT + LLM 全功能】:
+#   pip install torch transformers pandas scikit-learn matplotlib seaborn tqdm chardet accelerate peft
+# ============================================================
